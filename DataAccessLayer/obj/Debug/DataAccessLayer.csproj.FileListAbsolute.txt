@@ -1,0 +1,14 @@
+E:\WEB\ATOZWEBOMS\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\WEB\ATOZWEBOMS\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\WEB\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\WEB\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\WEB\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\Live\ATOZWEBOMS\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\Live\ATOZWEBOMS\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\Live\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\Live\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\Live\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\ATOZWEBOMS\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\ATOZWEBOMS\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\ATOZWEBOMS\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

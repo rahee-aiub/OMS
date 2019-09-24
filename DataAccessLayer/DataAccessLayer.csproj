@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BFF4DDA-B4DA-4375-9860-88914A91BB67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessLayer</RootNamespace>
+    <AssemblyName>DataAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SoftValidity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SoftValidity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VbClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\VbClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CommonManager.cs" />
+    <Compile Include="Constants\CommonConstants.cs" />
+    <Compile Include="Constants\DBConstants.cs" />
+    <Compile Include="DAO\CommonDAO.cs" />
+    <Compile Include="DTO\A2ZAUDITDTO.cs" />
+    <Compile Include="DTO\A2ZAUDRECDTO.cs" />
+    <Compile Include="DTO\A2ZSESSIONDTO.cs" />
+    <Compile Include="DTO\A2ZSYSIDSDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZCSPARAMDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZCSPARAMETERDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZITEMSDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZPARTYDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZRECCTRLDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZRECCTRLNODTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZREGIONDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZSMSPROCESS.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZSTAFFLOANDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZSUBREGIONDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZTRNOPTDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZTRNVALIDDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZVCHNOCTRLDTO.cs" />
+    <Compile Include="DTO\CustomerServices\A2ZVCHPRINTCTRLDTO.cs" />
+    <Compile Include="DTO\CustomerServices\SMSServiceProcess.cs" />
+    <Compile Include="DTO\HouseKeeping\A2ZDATABASEDTO.CS" />
+    <Compile Include="DTO\HouseKeeping\A2ZERPBRANCHDTO.cs" />
+    <Compile Include="DTO\HouseKeeping\A2ZERPMENUDTO.cs" />
+    <Compile Include="DTO\HouseKeeping\A2ZERPMODULEDTO.cs" />
+    <Compile Include="DTO\HouseKeeping\A2ZERPSYSPRMDTO.cs" />
+    <Compile Include="DTO\SQLTransaction.cs" />
+    <Compile Include="DTO\SystemControl\A2ZHOLIDAYDTO.cs" />
+    <Compile Include="DTO\SystemControl\A2ZHOLIDAYTYPEDTO.cs" />
+    <Compile Include="DTO\SystemControl\A2ZWEEKHOLIDAYDTO.cs" />
+    <Compile Include="Helper\SqlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\AtoZUtility.cs" />
+    <Compile Include="Utility\Converter.cs" />
+    <Compile Include="Utility\DropDownListUtility.cs" />
+    <Compile Include="Utility\Enums.cs" />
+    <Compile Include="Utility\Params.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DataAccessLayer.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\DataAccessLayer.dll" />
+    <Content Include="obj\Debug\DataAccessLayer.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conn\" />
+    <Folder Include="DataAccessLogger\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,126 @@
+.outter {
+    border: 3px #E0F0E8 solid;
+    background-color: #D4FFD4;
+}
+
+.inner {
+    border: 3px #E0F0E8 solid;
+    background-color: #F5FAF9;
+}
+
+.note {
+    font-family: tahoma;
+    font-size: 12px;
+    color: #333333;
+    border: 1px #55917A dashed;
+}
+
+.input {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    border: 1px #A7BEB7 solid;
+    background-color: #FFFFFF;
+    display: inline;
+}
+
+    .input:hover {
+        background-color: #CCFFFF;
+        border: inset;
+        border-color: #CC99FF;
+        display: inline;
+        outline-color: #FFCCFF;
+        outline-style: solid;
+        richness: inherit;
+        border-top: thin;
+        text-shadow: #CCFFFF;
+    }
+
+    .input:active {
+        background-color: #CCFFCC;
+        outline-color: #99CC99;
+        cue-after: inherit;
+        outline-style: groove;
+    }
+
+    .input:outhover {
+        background-color: #CCFFCC;
+    }
+    
+.text {
+    font-family: tahoma;
+    font-size: 14px;
+    color: #0000FF;
+    text-shadow: #99CCCC;
+}
+
+.formHeading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #55917A;
+}
+
+.td {
+    bgcolor ="#E0F0E8";
+}
+
+.button
+{
+background-color:#9999CC;
+font:"Times New Roman", Times, serif;
+font-size:20px;
+display: inline-block;
+ line-height: 16px;
+ border-width: 0px;
+ font-size: 18px;
+ font-family: arial;
+  
+ font-weight: bold;
+
+}
+
+.button:hover
+{
+background-color:#0033FF;
+
+border-color:#CC99FF;
+
+outline-color:#FFCCFF;
+outline-style:inherit;
+richness:inherit;
+
+text-shadow:#CCFFFF;
+opacity: .85;
+cursor: pointer;
+}
+
+.button:moz {
+    z-index: 4;
+}
+
+
+input[type=submit],
+input[type=reset],
+div.actions ul li a,
+td.actions a {
+    font-weight: normal;
+    padding: 2px 2px;
+    /*background:#e6e49f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1d4), to(#e6e49f));
+	background-image: -moz-linear-gradient(top, #f1f1d4, #e6e49f);
+	color:#333;
+	border:1px solid #aaac62;*/
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-shadow: #fff 0px 1px 0px;
+    min-width: 0;
+}
+
+    input[type=submit]:hover,
+    div.actions ul li a:hover,
+    td.actions a:hover {
+        background: #0000FF;
+        background: -webkit-gradient(linear, left top, left bottom, from(#CCFFFF), to(#0000FF));
+    }

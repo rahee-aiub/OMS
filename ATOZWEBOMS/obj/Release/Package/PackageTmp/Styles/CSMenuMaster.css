@@ -1,0 +1,76 @@
+﻿*
+{
+	 padding: 0 auto;
+	 margin:0 auto;
+}
+body
+{
+	/*background: url(../Images/bbb.png)repeat;*/
+}
+
+.MenuBar {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-bottom: 0;
+    padding-top:0;
+}
+
+.StaticMenuItem {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #222a6f;    
+    font: 13pt large 900;    
+    margin: auto;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    height: 45px;
+    text-align: center;
+    color: white; 
+   
+}
+
+.StaticMenuItemStyle {
+    color: #ffffff;
+    padding: 10px;
+    padding-left:2px;
+    padding-right: 2px;
+    border: solid;
+    border-width: 2px;
+    border-color: none;
+}
+
+.StaticHoverStyle {
+    color: #f6f6f6;
+     background-color: #000000;
+}
+
+.StaticSelectedStyle {
+   background-color: #222a6f;  
+    color: #43d321;
+}
+
+.DynamicMenuItemStyle {
+    background-color: #222a6f;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f32626;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    font: 12pt calibri;
+    margin: auto;
+    border-left: 0px solid #c1c1c1;
+    border-right: 0px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    border-spacing: 0px;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    height: 35px;
+    text-align: left;
+    color: white;
+    padding: 5px;
+   
+}
+
+.DynamicHoverStyle {
+    background-color: #000000;
+    color: #ffffff;
+}
